@@ -19,5 +19,7 @@ int main()
 			if(arr[i]%2!=0)
 				so=so+arr[i];
 	}
+	delete[] arr;
 	cout<<"sum of even no at even index is "<<se<<" and that of odd no at odd index is "<<so<<endl;
+	return 0;
 }
