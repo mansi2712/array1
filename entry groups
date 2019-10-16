@@ -1,0 +1,23 @@
+//coding ninjas ques
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,sum=0,q,r;
+	cout<<"enter the no of entries(should be even): ";
+	cin>>n;
+	cout<<"enter data: ";
+	int *arr=new int[n];
+	for(int i=0;i<n;i++)
+		cin>>arr[i];
+	for(int i=0;i<n/2;i++)
+	{
+		sum=0;
+		sum=arr[i]+arr[n-i-1];
+		q=sum/10;
+		r=sum%10;
+		cout<<"No of groups in"<<i+1<<" entry is: "<<q<<",entries without group: "<<r<<endl;
+	}
+  delete[] arr;
+	return 0;
+}
