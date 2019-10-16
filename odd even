@@ -1,0 +1,23 @@
+//sum of even no at even index and odd no at odd index
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	int se=0,so=0;
+	cout<<"enter the no of elements in array: ";
+	cin>>n;
+	cout<<"enter the elements: ";
+	int *arr=new int[n];
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+		if(i%2==0)
+			if(arr[i]%2==0)
+				se=se+arr[i];
+		if(i%2!=0)
+			if(arr[i]%2!=0)
+				so=so+arr[i];
+	}
+	cout<<"sum of even no at even index is "<<se<<" and that of odd no at odd index is "<<so<<endl;
+}
